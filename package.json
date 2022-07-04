@@ -2,7 +2,7 @@
   "name": "my-react-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Mehtab-Akram.github.io/public",
+  "homepage": "https://Mehtab-Akram.github.io/movie-search-app-for-fun.",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
