@@ -19,11 +19,15 @@ const App = () => {
     useEffect(() => {
         searchMovies(searchTerm)
     }, [])
+    const handleKeyDown = (e) => {
+        if(e.key == 'Enter')
+         searchMovies(searchTerm) 
+    }
     return (
         <div className="app">
             < h1>Movie Search</h1>
             <div className="search">
-                <input placeholder="Search Movies" onChange={(e) => setSearchTerm(e.target.value)} />
+                <input placeholder="Search Movies" onChange={(e) => setSearchTerm(e.target.value)} onKeyDown={(e) => { handleKeyDown(e) }  } />
                 <img src={SearchIcon} alt="Alternate Button." onClick={(e)=>searchMovies(searchTerm)}/>
             </div>
             {
